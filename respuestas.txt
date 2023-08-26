@@ -1,0 +1,25 @@
+¿Por qué un lenguaje de programación sólo puede utilizarse en algunos sistemas operativos y en otros no? 
+
+La capacidad de un lenguaje de programación para ser usado en sistemas operativos específicos o en varios sistemas depende de varios factores.
+
+Tales como si si el lenguaje en sí se comunica con el hardware (nivel del lenguaje), lo cual lo hace depender o no de las especificaciones de éste. También desi este lenguaje utiliza APIs o bibliotecas del sistema operativo, de manera que puede no funcionar sin la presencia de éstas.
+
+Esto sucede debido centralmente en que el desarrollo de un lenguaje de programación es una tarea grande y ardua que requiere de un mantenimientoconstante, por lo que habrán consideraciones comerciales de si hacer éste un lenguaje portable multiplataforma o no.
+
+¿Qué tipo de máquina virtual soporta Virtual Box?
+
+- Máquinas Virtuales de 32 y 64 bits. Los sistemas comúnes tanto en versión monousuario o multiusuario (servidor)
+- Máquinas Virtuales de Hardware Virtual: Son máquinas virtuales con funciones
+ avanzadas de hardware virtual, lo que permite un rendimiento optimizado y 
+características adicionales. La virtualización de hardware permite que el hipervisor (el software que gestiona las máquinas virtuales) acceda directamente a ciertas extensiones y características de virtualización presentes en el hardware físico. 
+- Máquinas Virtuales con Soporte para Virtualización Anidada: En sistemas que admiten la virtualización anidada, VirtualBox puede ejecutar máquinas virtuales dentro de máquinas virtuales, lo que es útil para ciertos casos de uso.
+
+¿Qué función cumple el hypervisor en la virtualización?
+
+Se podría decir que es el "kernel" de VirtualBox, que se comunica con el kernel de su sistema operativo anfitrión. Centralmente se encarga de la ejecución de las máquinas virtuales, la gestión de recursos de hardware, y funciona también como interfaz gráfica para la administración de las máquinas virtuales.
+
+Si tengo más de una máquina virtual instalada, y una se rompe, ¿Esto afecta a las demás? ¿Por qué?
+
+No debería, porque operan de manera independiente y aislada.
+
+En caso de que una máquina virtual esté consumiendo una cantidad excesiva de recursos del hardware, podría afectar a las otras, en caso de que exista una configuración de redes entre máquinas virtuales, o en caso de que el hypervisor experimentara errores.
